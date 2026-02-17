@@ -1,6 +1,6 @@
 # Mini Artichokes
 
-*Mini Artichokes: Cracking Korea's Hardest Logic Exams with Just gemma-3-27b-it via Validated Overlap (PSAT ≥90 points).*
+*Mini Artichokes: Cracking Korea's Hardest Logic Exams with Just Gemma-3-27B (gemma-3-27b-it) via Validated Overlap — PSAT (best-of-20) ≥90 points.*
 
 ![Mini Artichokes overview](mini_artichokes_overview.png)
 
@@ -31,6 +31,8 @@ See `mini_artichokes.pdf` for the full method, algorithm, and experimental resul
 - Why “validated overlap”: only feed back what two independent diagnoses agree on, then require that overlap to explain the verifier’s failure report (reduces self-correction drift from spurious critiques).
 - Budgeting: supports a per-round call cap (`rcap`); the default “Mini Artichokes” configuration uses `rcap35` (`test43-2-rcap35`).
 - This runner keeps the paper’s internal checkpoint IDs (e.g., `test2`) so the UI/logs match the appendix tables exactly.
+
+PSAT Linguistic Logic (2025) — best-of-20 (the ≥90 headline above): pass@1 reaches 62.5/100 (25/40 items), while Mini Artichokes reaches 92.5/100 (37/40 items). The gains are most visible in coverage on the hardest questions: Mini Artichokes solves 12 of the 15 items that pass@1 never solves in 20 trials, and on PSAT we do not observe the reverse (an item pass@1 solves at least once while Mini Artichokes has zero successes).
 
 ![PSAT results](mini_artichokes_psat.png)
 
