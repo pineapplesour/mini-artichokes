@@ -40,8 +40,9 @@ PSAT Linguistic Logic (2025) — best-of-20 (the ≥90 headline above): pass@1 r
 
 1. Open `Mini Artichokes.html` in a modern browser. No build step is required.
 2. In **Architecture API Settings**, configure your API keys, URL, and model.
-3. In the architecture selector, check the architectures you want to run (Core or **More Architectures**).
-4. Click **Run / Resume**.
+3. Paste the problem(s) you want to solve into **Problems (Multi-problem runner)**.
+4. In the architecture selector, check the architectures you want to run (Core or **More Architectures**).
+5. Click **Run / Resume**.
 
 ## License
 
