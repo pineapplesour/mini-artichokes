@@ -32,9 +32,9 @@ See `mini_artichokes.pdf` for the full method, algorithm, and experimental resul
 - Budgeting: supports a per-round call cap (`rcap`); the default “Mini Artichokes” configuration uses `rcap35` (`test43-2-rcap35`).
 - This runner keeps the paper’s internal checkpoint IDs (e.g., `test2`) so the UI/logs match the appendix tables exactly.
 
-PSAT Linguistic Logic (2025) — best-of-20 (the ≥90 headline above): pass@1 reaches 62.5/100 (25/40 items), while Mini Artichokes reaches 92.5/100 (37/40 items). Overall suite accuracy improves modestly (58.4% → 61.5%), but the gains are most visible in coverage on the hardest questions: Mini Artichokes solves 12 of the 15 items that pass@1 never solves in 20 trials, and on PSAT we do not observe the reverse (an item pass@1 solves at least once while Mini Artichokes has zero successes). We view Mini Artichokes as a fallback module for hard, low-confidence failures rather than a wholesale replacement for pass@1.
-
 ![PSAT results](mini_artichokes_psat.png)
+
+PSAT Linguistic Logic (2025) — best-of-20 (the ≥90 headline above): pass@1 reaches 62.5/100 (25/40 items), while Mini Artichokes reaches 92.5/100 (37/40 items). Overall suite accuracy improves modestly (58.4% → 61.5%), but the gains are most visible in coverage on the hardest questions: Mini Artichokes solves 12 of the 15 items that pass@1 never solves in 20 trials, and on PSAT we do not observe the reverse (an item pass@1 solves at least once while Mini Artichokes has zero successes). We view Mini Artichokes as a fallback module for hard, low-confidence failures rather than a wholesale replacement for pass@1.
 
 ## How to Use
 
